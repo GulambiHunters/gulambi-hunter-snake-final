@@ -12,10 +12,40 @@ let snakeArr = [
 ];
 
 food = {x: 6, y: 7};
+/* View in fullscreen */
+const elem = document.documentElement;
 
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+        document.msExitFullscreen();
+    }
+}
+function getFull()
+{
+    if (confirm("Enter fullscreen mode for best User Experience")) {
+        openFullscreen()
+    }
+}
+//getFull();
 // Game Functions
 function main(ctime) {
     window.requestAnimationFrame(main);
+
     // console.log(ctime)
     if((ctime - lastPaintTime)/1000 < 1/speed){
         return;
