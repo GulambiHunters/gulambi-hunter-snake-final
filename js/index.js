@@ -37,10 +37,12 @@ function closeFullscreen() {
 }
 function getFull()
 {
-    if (confirm("Enter fullscreen mode for best User Experience")) {
-        openFullscreen()
-    }
+    // if (confirm("Enter fullscreen mode for best User Experience")) {
+    //     openFullscreen()
+    // }
+
 }
+alert("Enter fullscreen mode for best user experience!!!")
 //getFull();
 // Game Functions
 function main(ctime) {

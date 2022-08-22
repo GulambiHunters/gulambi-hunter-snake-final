@@ -34,13 +34,13 @@
 }
 
 #board{
-    background-size: cover;
-    background: url("../img/new.jpg") no-repeat center;
+
     width: 90vmin;
     height: 92vmin;
     border: 2px solid black;
     display: grid;
-
+    background: url("../img/new.jpg") no-repeat fixed center;
+    background-size: contain;
     grid-template-rows: repeat(18, 1fr);
     grid-template-columns: repeat(18, 1fr);
 }
