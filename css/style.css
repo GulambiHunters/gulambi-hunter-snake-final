@@ -62,9 +62,9 @@
 }
 
 .food{
-    background: url("../img/food.gif") no-repeat;
-    background-size: cover;
+    background: url("../img/food.gif") no-repeat center;
+    background-size: contain;
     border: 0;
 
-    border-radius: 8px;
+    border-radius: 2px;
 }
