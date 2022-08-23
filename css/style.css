@@ -49,20 +49,21 @@
     background-size: contain;
     background: url("../img/dkhead.png") no-repeat center;
     border: 0;
-    transform: scale(2.02);
+    z-index: 10;
+    transform: scale(1.02);
     border-radius: 6px;
 }
 
 .snake{
     background : url("../img/dkbody.png");
     background-size: contain;
-    transform: scale(2.02);
+    transform: scale(1.02);
     border: 0;
     border-radius: 6px;
 }
 
 .food{
-    background: url("../img/food.gif") no-repeat center;
+    background: url("../img/food2.jpg") no-repeat center;
     background-size: contain;
     border: 0;
     transform: scale(2.02);
